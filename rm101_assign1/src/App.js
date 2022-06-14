@@ -11,15 +11,16 @@ function App() {
 
   return (
     <div className="App">
-      <h2 data-testid="counter-value">{sum}</h2>
-      <button data-testid="counter-decrement-button" onClick={()=>{
-        setSum(sum+1);
-      }} >increse by 1</button>
-      <button data-testid="counter-increment-button" onClick={()=>{
+      <h2 data-testid="counter-value">COUNTER APP</h2>
+      <h2 data-testid="counter-value" className="sum">{sum}</h2>
+      <button data-testid="counter-decrement-button" className="decre" onClick={()=>{
         setSum(sum-1);
-        setSum(-1);
+      }} disabled={sum===0 ? true : false} >Decrement by 1</button>
+      <button data-testid="counter-increment-button" className="incre" onClick={()=>{
+        setSum(sum+1);
+        // setSum(-1);
       }}
-      disabled={sum===0 ? true : false} >decrese by 1</button>
+      >Increment by 1</button>
     </div>
   );
 }
