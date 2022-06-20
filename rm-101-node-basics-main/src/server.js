@@ -66,17 +66,17 @@ app.post(("/users/:ID"),async(req,res)=>{
 });
 
 
-// app.listen(8000,async()=>{
-//     try {
+app.listen(8000,async()=>{
+    try {
     
-//     await details;
+    await details;
     
-//     } catch (error) {
-//         console.log(error)
-//     }
-//     console.log("8000")
+    } catch (error) {
+        console.log(error)
+    }
+    console.log("8000")
     
-//     })
+    })
 
 // Note: Do not remove this export statement
 module.exports = app;
