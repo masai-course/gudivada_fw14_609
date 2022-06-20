@@ -1,0 +1,20 @@
+{
+  "name": "user-api-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "author": "masai-school",
+  "license": "ISC",
+  "scripts": {
+    "serve": "nodemon src/server.js",
+    "test": "jest --watchAll=false --bail --runInBand --forceExit"
+  },
+  "dependencies": {
+    "express": "^4.18.1",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "jest": "^28.1.1",
+    "supertest": "^6.2.3"
+  }
+}
