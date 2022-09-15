@@ -1,20 +1,18 @@
 {
-  "userdetails": [
-    {
-        "id": 1,
-        "name": "ram",
-        "age": 29,
-        "place": "Visakhapatnam",
-        "batch_name": "WEB-21",
-        "profession": "FSD"
-      },
-      {
-        "id": 1,
-        "name": "ganesh",
-        "age": 32,
-        "place": "Vijayawada",
-        "batch_name": "WEB-18",
-        "profession": "FSD"
-      }
-  ]
+  "userdetails": [ {
+    "id": 1,
+    "name": "ram",
+    "age": 29,
+    "place": "Visakhapatnam",
+    "batch_name": "WEB-21",
+    "profession": "FSD"
+  },
+  {
+    "id": 1,
+    "name": "ganesh",
+    "age": 32,
+    "place": "Vijayawada",
+    "batch_name": "WEB-18",
+    "profession": "FSD"
+  }]
 }
