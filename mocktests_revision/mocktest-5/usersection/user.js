@@ -1,13 +1,15 @@
-document.querySelector(".form").addEventListener("submit",(e) => {
-    e.preventDefault();
-    let datas = formsubmit();
-    console.log(datas);
-    if (datas) {
+document.querySelector(".form").addEventListener("submit", (e) => {
+  e.preventDefault();
+  let datas = formsubmit();
+  console.log(datas);
+  if (datas) {
       CreateuserDetails(datas);
-    }});
+    }
+    alert("successfully registered");
+});
 const submitBtn = document.querySelector(".submit-btn");
 
-// submitBtn.addEventListener("click", 
+// submitBtn.addEventListener("click",
 // );
 
 function formsubmit() {
@@ -36,11 +38,10 @@ async function CreateuserDetails() {
   console.log(items);
 }
 
-async function fetchuserData(){
-	const datas = await fetch("http://localhost:8080/userdetails")
-	.then((response)=> response.json())
-	.catch((error)=> console.log(error));
-	
+async function fetchuserData() {
+  const datas = await fetch("http://localhost:8080/userdetails")
+    .then((response) => response.json())
+    .catch((error) => console.log(error));
 }
 
 fetchuserData();
