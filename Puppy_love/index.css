@@ -1,0 +1,10 @@
+.navbar {
+  border: 1px solid red;
+  display: flex;
+  justify-content: space-around;
+}
+#container {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 20px;
+}
