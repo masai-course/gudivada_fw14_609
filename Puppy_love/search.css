@@ -1,7 +1,13 @@
 .navbar {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   display: flex;
   justify-content: space-around;
+  border-radius: 5px;
+  color: aliceblue;
+  background-color: aquamarine;
+}
+a {
+  text-decoration: none;
 }
 #container {
   display: grid;
@@ -17,4 +23,14 @@
 .Seachinput {
   margin: 1%;
   text-align: center;
+}
+.btn {
+  border: none;
+  font-size: larger;
+  background-color: aquamarine;
+  border-radius: 5px;
+}
+#search {
+  width: 20%;
+  height: 18px;
 }

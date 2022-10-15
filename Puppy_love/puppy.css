@@ -1,9 +1,14 @@
 .navbar {
-  border: 1px solid red;
+  /* border: 1px solid red; */
   display: flex;
   justify-content: space-around;
+  border-radius: 5px;
+  color: aliceblue;
+  background-color: aquamarine;
 }
-
+a {
+  text-decoration: none;
+}
 #container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
