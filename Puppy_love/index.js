@@ -1,4 +1,6 @@
 var container = document.querySelector("#container");
+var cartArr=localStorage.getItem("dogname") ||[];
+
 
 async function puppies() {
   try {
@@ -30,6 +32,7 @@ function appendData(data) {
     title.innerText = el;
     title.addEventListener("click", function () {
         var ans=title.innerText
+        addCart(ans)
         window.location.href="puppy.html"
 
     //   console.log(title.innerText);
@@ -39,4 +42,9 @@ function appendData(data) {
 
     container.append(div);
   });
+  function addCart(ele){
+    cartArr.push(ele);
+  localStorage.setItem("dogname",cartArr);
+  alert("Add succussful");
+  }
 }

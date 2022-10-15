@@ -1,9 +1,10 @@
 var container = document.querySelector("#container");
+var cartArr=localStorage.getItem("dogname")|| [];
 
 async function anyPuppy() {
   try {
     //   var puppy = document.querySelector("#search").value;
-    let res = await fetch(`https://dog.ceo/api/breed/hound/images`);
+    let res = await fetch(`https://dog.ceo/api/breed/${cartArr}/images`);
 
     let data = await res.json();
 
