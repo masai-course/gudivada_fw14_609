@@ -1,6 +1,5 @@
 var container = document.querySelector("#container");
-var cartArr=localStorage.getItem("dogname") ||[];
-
+var cartArr = localStorage.getItem("dogname");
 
 async function puppies() {
   try {
@@ -31,20 +30,19 @@ function appendData(data) {
     let title = document.createElement("h3");
     title.innerText = el;
     title.addEventListener("click", function () {
-        var ans=title.innerText
-        addCart(ans)
-        window.location.href="puppy.html"
+      var ans = title.innerText;
+      addCart(ans);
+      window.location.href = "puppy.html";
 
-    //   console.log(title.innerText);
+      //   console.log(title.innerText);
     });
 
     div.append(title);
 
     container.append(div);
   });
-  function addCart(ele){
-    cartArr.push(ele);
-  localStorage.setItem("dogname",cartArr);
-  alert("Add succussful");
+  function addCart(ele) {
+    // cartArr.push(ele);
+    localStorage.setItem("dogname", cartArr);
   }
 }
