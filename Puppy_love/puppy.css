@@ -1,5 +1,17 @@
 .navbar {
-    border: 1px solid red;
-    display: flex;
-    justify-content: space-around;
-  }
+  border: 1px solid red;
+  display: flex;
+  justify-content: space-around;
+}
+
+#container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  /* grid-template-rows: repeat(3, 100px); */
+  grid-gap: 5px;
+}
+
+.src {
+  width: 100px;
+  height: 100px;
+}

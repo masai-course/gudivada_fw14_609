@@ -24,9 +24,16 @@ function appendData(data) {
 
   data.forEach(function (el) {
     let div = document.createElement("div");
+    div.setAttribute("class", "image-value");
 
     let title = document.createElement("h3");
     title.innerText = el;
+    title.addEventListener("click", function () {
+        var ans=title.innerText
+        window.location.href="puppy.html"
+
+    //   console.log(title.innerText);
+    });
 
     div.append(title);
 
